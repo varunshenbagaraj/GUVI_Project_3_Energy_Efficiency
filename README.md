@@ -23,11 +23,11 @@ The dataset contains eight attributes (or features, denoted by X1...X8) and two 
 
 
 #### Dependencies
-* Programming Language – Python
-* Data Analysis – Pandas
-* Data Visualization – Matplotlib, Seaborn
-* ML Algorithms – Linear Regression, Random Forest Regression
-* Performance Evaluation – Accuracy Score
+* Programming Language – *Python*
+* Data Analysis – *Pandas*
+* Data Visualization – *Matplotlib, Seaborn*
+* ML Algorithms – *Linear Regression, Random Forest Regression*
+* Performance Evaluation – *Accuracy Score*
 
 #### Approach
 * All the features were renamed for better readability.
