@@ -21,4 +21,29 @@ The dataset contains eight attributes (or features, denoted by X1...X8) and two 
 * y1 Heating Load - Target
 * y2 Cooling Load - Target
 
----------------------------------------------------------------------------------------------------------------------------------
+
+#### Dependencies
+* Programming Language – Python
+* Data Analysis – Pandas
+* Data Visualization – Matplotlib, Seaborn
+* ML Algorithms – Linear Regression, Random Forest Regression
+* Performance Evaluation – Accuracy Score
+
+#### Approach
+* All the features were renamed for better readability.
+* Feature extraction was performed. Floor Area was introduced into the dataset.
+* EDA was performed to check for multicollinearity and eliminate the same
+* The results of prediction was evaluated using accuracy score.
+* The best model can be decided based on the accuracy score
+* Important  features(i.e. strongest predictors) were computed from the coefficients(weights) and attributes available within the model.
+* Evaluation metrics and Feature importance have been tabulated.
+
+#### EDA Insights
+* We observed that **Surface_Area = Wall_Area + 2 x Roof_Area**. We know that, **Roof_Area = Floor_Area** in buildings, a new feature Floor_Area was introduced into the dataset thus making **Surface_Area = Wall_Area + Roof_Area + Floor_Area**
+* **Relative Compactness and Surface Area are inversely proportional.** Since Wall_Area (WA), Floor_Area (FA), and Roof_Area (RA) are directly proportional to Surface Area(SA), **Relative Compactness is inversely proportional to RA, WA, FA also.**
+* The dependent variables **Heating_Load & Cooling_Load itself are directly proportional** to each other. Therefore, **further investigation is required whether either of them can be dropped for Linear Regression.**
+
+#### Further Developments
+* Investigation required if we can eliminate either of the regressands since they are directly proportional to each other.
+* Eliminating one of them will make applying gradient descent easier by which Linear Regression can be optimized
+* Industry experts to be consulted to get details about the optimum loads so that building can be modelled in a very sustainable manner to consume the right amount of electricity.
